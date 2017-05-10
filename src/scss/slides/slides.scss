@@ -1,0 +1,56 @@
+.reveal .slides {
+  .slide-header {
+  	border-bottom: 2px solid $black;
+  	border-top: 2px solid $black;
+  	padding: 0.25em 0;
+
+  	h2 {
+  		font-size: 1.1rem;
+  		margin: 0;
+  	}
+  }
+
+  .content {
+		backface-visibility: hidden;
+    font-family: $font-family--base !important;
+    font-size: 2rem;
+		line-height: 1.5 !important;
+
+    h2:not(.h1) {
+      font-size: 4rem;
+      margin: 0.4em 0;
+    }
+
+		p {
+			line-height: 1.5 !important;
+		}
+
+    img {
+      display: block;
+      margin: 1em auto;
+
+      &.medium {
+        max-width: 50%;
+      }
+    }
+  }
+
+  a {
+    color: $color-brand--red;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+	.credit {
+		font-size: 1rem;
+		font-style: italic;
+	}
+}
+
+.instructor {
+  font-weight: $font-weight--v-thick !important;
+  display: inline-block;
+  margin: 2em 0 !important;
+}

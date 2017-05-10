@@ -1,0 +1,34 @@
+.reveal .slides {
+	overflow: hidden;
+  text-align: left;
+
+  img {
+    background: none;
+    border: none;
+    box-shadow: none;
+    display: inherit;
+    margin: 0;
+
+		&.inline-img {
+			display: inline !important;
+			margin: 0 !important;
+			vertical-align: middle;
+		}
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      padding-left: 0.5em;
+    }
+  }
+
+  ol {
+    margin: 0;
+
+    li  {
+      list-style-position: inside;
+    }
+  }
+}
