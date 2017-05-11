@@ -9,3 +9,15 @@
     border-color: $white !important;
   }
 }
+
+.margin--small {
+	margin: 0.5rem 0 !important;
+
+	&.h2 {
+		line-height: 1.1;
+	}
+}
+
+.float-left {
+	float: left;
+}

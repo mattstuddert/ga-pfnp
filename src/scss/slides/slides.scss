@@ -21,7 +21,7 @@
       margin: 0.4em 0;
     }
 
-		p {
+		p:not(.h2) {
 			line-height: 1.5 !important;
 		}
 
@@ -31,6 +31,10 @@
 
       &.medium {
         max-width: 50%;
+      }
+
+			&.large {
+        max-width: 90%;
       }
     }
   }
