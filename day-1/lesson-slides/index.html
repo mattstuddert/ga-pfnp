@@ -852,16 +852,6 @@
           </div>
 				</section>
 
-				<section class="u-bg--black">
-				  <div class="slide-header">
-            <h2>HTML</h2>
-				  </div>
-
-          <div class="content">
-            <h1>Let's start coding!</h1>
-          </div>
-				</section>
-
 				<section>
 				  <div class="slide-header">
             <h2>HTML</h2>
@@ -871,6 +861,16 @@
             <h2>HTML snippet</h2>
 
             <img src="../../dist/images/day-1/html-snippet.png" alt="HTML snippet example">
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+            <h1>Let's start coding!</h1>
           </div>
 				</section>
 
@@ -953,7 +953,7 @@
 							content and also provide context for the content within.
 						</p>
 
-						<img src="../../dist/images/day-1/html-structural-tags.png" alt="HTML structural tags example">
+						<img class="small" src="../../dist/images/day-1/html-structural-tags.png" alt="HTML structural tags example">
           </div>
 				</section>
 
@@ -1143,6 +1143,75 @@
           </div>
 				</section>
 
+				<section>
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Image asset file formats</h2>
+
+            <p>
+              Different file formats have different properties:
+            </p>
+            <ul>
+              <li class="fragment">
+                <p>
+									<code>.png</code> Supports transparency and semi-transparency,
+	                great for logos, icons, and repeating background tiles.
+								</p>
+              </li>
+              <li class="fragment">
+                <p>
+									<code>.jpeg</code> No transparency, can be stored at different
+	                compression levels with varying amounts of "lossy-ness", typically
+	                the best format for photos. (Try to balance between photo quality
+	                and file size.)
+								</p>
+              </li>
+              <li class="fragment">
+                <p>
+									<code>.gif</code> Can have basic transparency and can cycle through
+	                a number of images, providing an animated asset.
+								</p>
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+						<h2>File naming</h2>
+
+            <p>
+              It is useful to develop a consistent strategy for naming files.
+              Here are some good guidelines to start implementing:
+            </p>
+            <ul>
+              <li>
+                <p>
+									Never use spaces when naming a file.
+								</p>
+              </li>
+              <li>
+                <p>
+									Use either '-' or '_' to separate words. It doesn't matter which,
+	                but be consistent.
+								</p>
+              </li>
+              <li>
+                <p>
+									Use only lowercased letters.
+								</p>
+              </li>
+            </ul>
+          </div>
+				</section>
+
 				<section class="u-bg--black">
 				  <div class="slide-header">
             <h2>HTML</h2>
@@ -1228,6 +1297,35 @@
 				  </div>
 
           <div class="content">
+						<h2>The DOM</h2>
+
+            <p>
+              The Document Object Model (DOM) provides a virtual representation of
+              your markup. Once the document (your page) is parsed by the browser,
+              the DOM renders your code as a group of 'nodes'.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>The DOM</h2>
+
+            <img src="../../dist/images/day-1/dom-tree.gif" alt="Example of the DOM">
+            <p class="credit">Credit: <a href="http://www.webstepbook.com/supplements/slides/lecture16-dom_tree.shtml" target="_blank">Web Step Book</a></p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
 						<h2>Spacing content</h2>
 
 						<p>
@@ -1235,7 +1333,7 @@
 							spacing both inside and outside these boxes to spread them out.
 						</p>
 
-						<img src="../../dist/images/day-1/css-boxes.png" alt="CSS box model diagram">
+						<img class="very-small" src="../../dist/images/day-1/css-boxes.png" alt="CSS box model diagram">
           </div>
 				</section>
 
@@ -1356,13 +1454,123 @@
           </div>
 				</section>
 
+				<section>
+					<div class="slide-header">
+						<h2>CSS</h2>
+					</div>
 
+					<div class="content">
+						<h2>CSS colors (yep that's how to spell it in CSS!)</h2>
 
+						<p>
+							When declaring colours in CSS, there are 6 different options
+							available to you:
+						</p>
+						<ul>
+							<li>Keyword</li>
+							<li>Hex code</li>
+							<li>RGB</li>
+							<li>RGBa</li>
+							<li>HSL</li>
+							<li>HSLa</li>
+						</ul>
+					</div>
+				</section>
 
+				<section>
+					<div class="slide-header">
+						<h2>CSS</h2>
+					</div>
 
+					<div class="content">
+						<h2>Keyword</h2>
 
+						<p>
+							As you have already seen, there are some keywords for CSS colours,
+							such as <code>black</code>, <code>white</code>, <code>red</code>.
+							Or if you want to go very random: <code>blanchedalmond</code>,
+							<code>palegoldenrod</code>, <code>peachpuff</code>, <code>whitesmoke</code>,
+							or my personal favourite <code>papayawhip</code>.
+						</p>
+					</div>
+				</section>
 
+				<section>
+					<div class="slide-header">
+						<h2>CSS</h2>
+					</div>
 
+					<div class="content">
+						<h2>Hex</h2>
+
+						<p>
+							Hex code values range from 0 (lowest) to F (highest) with the
+							first two numbers representing red, the second two green and the
+							final two blue.
+						</p>
+						<img src="../../dist/images/day-1/colors-hex.png" alt="Hex code colour diagram">
+						<p>
+							This is the only colour unit where you can be really sad (like me)
+							and create words out of colour codes...<code>#BADA55</code>!
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>CSS</h2>
+					</div>
+
+					<div class="content">
+						<h2>RGB and RGBa</h2>
+
+						<p>
+							RGB is written as 3 values ranging from 0-255. The first unit is
+							for red, second for green and third for blue e.g. <code>rgb(0,100,0)</code> would
+							be a dark-ish green.
+						</p>
+						<p>
+							RGBa is the same as RGB, only a fourth value is added ranging from 0-1.
+							This unit represents transparency with 0 being fully transparent and
+							1 being solid e.g. <code>rgba(0,100,0, 0.5)</code> would be the same colour as before,
+							but slightly transparent.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>CSS</h2>
+					</div>
+
+					<div class="content">
+						<h2>HSL and HSLa</h2>
+
+						<p>
+							HSL is typically the least used colour unit in CSS.
+						</p>
+						<p>
+							The numbers correspond to the hue, saturation and lightness of the
+							colour. Hue is expressed as a degree angle measure. Saturation is
+							expressed as a percentage, with 100% being a fully saturated color,
+							and 0% being a shade of gray (no hue). Lightness is also expressed
+							as a percentage, 0% being black, and 100% being white.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>CSS</h2>
+					</div>
+
+					<div class="content">
+						<h2>HSL and HSLa</h2>
+
+						<img class="small" src="../../dist/images/day-1/colors-hsl.png" alt="HSL CSS colour diagram">
+						<p class="credit">Credit: <a href="http://tympanus.net/codrops/css_reference/hsl/" target="_blank">Codrops</a></p>
+					</div>
+				</section>
 
 				<section>
 				  <div class="slide-header">
@@ -1379,6 +1587,46 @@
 						</p>
 
 						<img src="../../dist/images/day-1/css-background-image.png" alt="CSS background image property">
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <img class="logo" src="../../dist/images/ga/ga-logo-text.png" alt="General Assembly logo">
+				  </div>
+
+          <div class="content">
+            <h1>Clean up!</h1>
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <img class="logo" src="../../dist/images/ga/ga-logo-text.png" alt="General Assembly logo">
+				  </div>
+
+          <div class="content">
+            <h1>Q&amp;A</h1>
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <img class="logo" src="../../dist/images/ga/ga-logo-text.png" alt="General Assembly logo">
+				  </div>
+
+          <div class="content">
+            <h1>Review</h1>
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <img class="logo" src="../../dist/images/ga/ga-logo-text.png" alt="General Assembly logo">
+				  </div>
+
+          <div class="content">
+            <h1>See you tomorrow!</h1>
           </div>
 				</section>
 

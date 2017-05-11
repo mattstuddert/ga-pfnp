@@ -29,6 +29,14 @@
       display: block;
       margin: 1em auto;
 
+			&.very-small {
+				max-width: 30%;
+			}
+
+			&.small {
+        max-width: 40%;
+      }
+
       &.medium {
         max-width: 50%;
       }
