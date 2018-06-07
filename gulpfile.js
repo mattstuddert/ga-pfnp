@@ -3,23 +3,28 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
-var livereload = require('gulp-livereload');
 var autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('css', function () {
-  gulp.src('src/scss/main.scss')
+var paths = {
+  styles: {
+    src: 'src/scss/**/*.scss',
+    dest: 'dist/css'
+  }
+};
+
+function styles() {
+  return gulp.src(paths.styles.src)
     .pipe(sass({
       errLogToConsole: true
     }))
     .pipe(autoprefixer())
     .pipe(cssmin())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/css'))
-    .pipe(livereload({ start: true }));
-});
+    .pipe(rename({basename: 'main', suffix: '.min'}))
+    .pipe(gulp.dest(paths.styles.dest));
+}
 
-gulp.task('watch:css', ['css'], function() {
-  gulp.watch('src/scss/**/**.scss', ['css']);
-});
+function watch() {
+  gulp.watch(paths.styles.src, styles);
+}
 
-gulp.task('dev', ['watch:css']);
+gulp.task(watch);
